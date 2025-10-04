@@ -8,7 +8,7 @@ Students will analyze a JSON file containing multiple syntax errors,
 identify the issues, and correct them.
 
 This activity helps practice spotting and fixing common JSON mistakes such as:
-- Missing commas
+- Missing commas 
 - Incorrect use of quotation marks
 - Unmatched brackets/braces
 - Trailing commas
@@ -46,19 +46,19 @@ but it contains multiple syntax errors that prevent it from being parsed.
 
 const invalidBookingJSON = `
 {
-  "hotelName": "Grand City Hotel",
-  "checkInDate": "2024-05-15"
+  "hotelName": "Grand City Hotel", 
+  "checkInDate": "2024-05-15", 
   "checkOutDate": "2024-05-20",
   "guests": [
     {
-      name: "Alice Johnson",
+      "name": "Alice Johnson",
       "age": 30,
       "email": "alice.johnson@example.com"
     },
     {
       "name": "Bob Smith",
-      "age": undefined,
-      "email": "bob.smith@example"
+      "age": 67,
+      "email": "bob.smith@example.com"
     }
   ],
   "roomDetails": {
@@ -90,12 +90,15 @@ const invalidBookingJSON = `
 /*
 💬 Reflect and answer the following:
 
-1️⃣ What tools or techniques did you use to identify the errors?
+1️⃣ What tools or techniques did you use to identify the errors? 
+I used past Json codes and comapred and contrasted this code with code I wrote eariler and previous excercisies. 
 
 2️⃣ How did you confirm that your corrected JSON file was valid?
+I used that JSON Vaildator. 
 
 3️⃣ Which errors were the most difficult to spot? Why?
+The trailing commas, I actually did not see them right away and took me a while to figure it out. 
 
 4️⃣ What strategies can help you avoid these kinds of errors in the future?
-   (e.g., syntax highlighting, linters, writing JSON by example)
+   (e.g., syntax highlighting, linters, writing JSON by example, having someone else come behind a verify. 
 */
